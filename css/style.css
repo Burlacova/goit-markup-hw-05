@@ -52,6 +52,11 @@ h1, h2, h3, p {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -64,11 +69,15 @@ h1, h2, h3, p {
     min-height: 521px;
     border-radius: 4px;
     background-color: #FFFFFF;
-    
+  
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close {
     position: absolute;
@@ -134,7 +143,7 @@ h1, h2, h3, p {
 }
 .current::after {
     position: absolute;
-    bottom: -1px;
+    bottom: -1.5px;
     left: 0px;
     content: "";
     width: 100%;
@@ -253,6 +262,10 @@ h1, h2, h3, p {
     border-radius: 4px;
 
     padding: 10px 32px; 
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover,
@@ -483,7 +496,7 @@ h1, h2, h3, p {
     border: solid 1px #AFB1B8;
     border-radius: 4px;  
     
-    transition-property: color;
+    transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
